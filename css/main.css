@@ -1,0 +1,155 @@
+@font-face{
+	src: url("/font/LiberationSerif-Bold.ttf");
+    font-family: "eng_bold"; 
+}
+@font-face{
+	src: url("/font/LiberationSerif-BoldItalic.ttf");
+    font-family: "eng_italic"; 
+}
+
+html{
+    font: 14px 'eng_bold';
+}
+body{
+    overflow-x: hidden;
+    letter-spacing: -0.05em;
+    background: #41A26B;
+}
+p{
+    line-height: 1.6;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* header stert */
+.nav{
+    float: left;
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 79px;
+    padding: 0 1rem;
+}
+.nav_links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-bottom: solid 1px;
+}
+.header_items{
+    margin-right: 20px;
+}
+.header_items:nth-child(2){
+    margin: 0;
+}
+/* header end */
+
+/* contents start */
+.container{
+    float: left;
+    position: relative;
+    width: 100%;
+}
+/* home start */
+.scroll_section{
+    width: 100%;
+    margin: 0 auto;
+    height: 850px;
+    border: dotted 1px orange;
+}
+#scroll_section_0{
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 1200px;
+
+}
+.home_receipt{
+    background: #F6E27A;
+    position: absolute;
+    bottom: 0;
+    height: 800px;
+    width: 29.1%;
+}
+.home_receipt>img{
+    position: relative;
+    left: 50%;
+    margin-left: -128.5px;
+    margin-top: 60px;
+}
+.home_receipt>p{
+    text-align: center;
+    font: 1rem "Source Code Pro";
+    font-weight: 200;
+}
+.home_receipt_list{
+    margin: 0 auto;
+    height: 220px;
+    width: 250px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+}
+.home_receipt_list>li{
+    display: flex;
+    font: 1.429rem "Noto Sans KR";
+    align-items: center;
+    margin-top: 15px;
+}
+.check-box{
+    height: 20px;
+    width: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: solid 1px;
+    margin-right: 10px;
+}
+.home_receipt_list>h1{
+    font: 1.714rem 'eng_italic';
+    height: 35px;
+    text-align: center;
+    border-bottom: dotted 1px;
+}
+.home_receipt_list>h1::before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: black;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+}
+.home_receipt_list>h1::after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: black;
+    position: absolute;
+    top: 10px;
+    right: 60px;
+}
+
+
+.home_menu{
+    background: #00794B;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 800px;
+    width: 69.1%;
+    box-sizing: border-box;
+    border: solid 1px ;
+}
+/* home end */
+
+/* contents end */
