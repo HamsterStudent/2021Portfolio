@@ -1,9 +1,9 @@
 @font-face{
-	src: url("/2021portfolio/font/LiberationSerif-Bold.ttf");
+	src: url("/2021portfolio/font/LiberationSerif-Bold.ttf") format('ttf');
     font-family: "eng_bold"; 
 }
 @font-face{
-	src: url("/2021portfolio/font/LiberationSerif-BoldItalic.ttf");
+	src: url("/2021portfolio/font/LiberationSerif-BoldItalic.ttf") format('ttf');
     font-family: "eng_italic"; 
 }
 
