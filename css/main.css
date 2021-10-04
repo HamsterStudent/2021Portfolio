@@ -26,11 +26,11 @@ a{
 /* header stert */
 .nav{
     float: left;
-    position: relative;
-    left: 0;
+    position: fixed;
     width: 100%;
     height: 79px;
     padding: 0 1rem;
+    z-index: 10;
 }
 .nav_links{
     display: flex;
@@ -53,7 +53,7 @@ a{
 
 .left_box{
     position: absolute;
-    bottom: 154px;
+    bottom: 5vh;
     left: 100px;
     width: 231px;
     height: 230px;
@@ -105,17 +105,27 @@ a{
 
 
 .right_box{
-    position: absolute;
-    top: 154px;
+    position: fixed;
+    top: 11vh;
     right: 100px;
     width: 231px;
     height: 390px;
-    background: salmon;
 }
-.clock_wrap{
+.right_box_wrap{
     width: 100%;
     height: 265px;
     border: solid 1px;
+}
+.clock_wrap{
+    width: 230px;
+    height: 230px;
+    border-radius: 115px;
+    border: solid 1px;
+}
+.text_clock{
+    width: 100%;
+    height: 35px;
+    border-top: solid 1px;
 }
 .marquee{
     overflow: hidden;
@@ -144,7 +154,7 @@ a{
 }
 
 .top_button{
-    position: absolute;
+    position: fixed;
     width: 80px;
     height: 80px;
     border: solid 1px;
@@ -152,6 +162,7 @@ a{
     border-radius: 40px;
     bottom: 41px;
     right: 249px;
+    z-index: 10;
 }
 .top_button>img{
     padding: 21px 40px 21px 27px;
@@ -170,22 +181,25 @@ a{
 .scroll_section{
     width: 100%;
     margin: 0 auto;
-    height: 850px;
+    height: 100vh;
     border: dotted 1px orange;
+    
 }
-#scroll_section_0{
+.contents_wrap{
     position: relative;
-    top: 0;
-    left: 0;
-    max-width: 1200px;
+    left: 0; top: 0;
+    width: 1200px;
+    height: 100%;
+    margin: 0px auto;
 
 }
 .home_receipt{
     background: #F6E27A;
     position: absolute;
-    bottom: 0;
-    height: 800px;
+    bottom: 5vh;
+    height: 84vh;
     width: 29.1%;
+
 }
 .home_receipt>img{
     position: relative;
@@ -252,9 +266,9 @@ a{
 .home_menu{
     background: #00794B;
     position: absolute;
-    bottom: 0;
+    bottom: 5vh;
     right: 0;
-    height: 800px;
+    height: 84vh;
     width: 69.1%;
     box-sizing: border-box;
     border: solid 1px ;

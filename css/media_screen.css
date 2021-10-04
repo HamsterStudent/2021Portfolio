@@ -1,0 +1,5 @@
+@media (min-width: 1900px){
+    .left_box, .right_box{
+        display: none;
+    }
+}
