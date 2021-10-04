@@ -52,7 +52,7 @@ a{
 }
 
 .left_box{
-    position: absolute;
+    position: fixed;
     bottom: 5vh;
     left: 100px;
     width: 231px;
@@ -62,10 +62,10 @@ a{
 .eye{
     position: absolute;
     width: 138px;
-    height: 230px;
+    height: 138px;
     border: solid 1px;
     border-radius: 50%;
-    /* transform:scale(.9) */
+    transform:scale(.9)
 }
 .eye01{
     left: 0;
@@ -73,9 +73,17 @@ a{
 .eye02{
     right: 0;
 }
+.eye03{
+    bottom: 0;
+}
+.eye04{
+    bottom: 0;
+    right: 0;
+}
 .iris{
     position: absolute;
-    left: 45px;
+    left: 50%;
+    margin-left: -14px;
     bottom: 0;
     width: 30px;
     height: inherit;
@@ -116,16 +124,60 @@ a{
     height: 265px;
     border: solid 1px;
 }
-.clock_wrap{
+
+.circle{
     width: 230px;
     height: 230px;
     border-radius: 115px;
     border: solid 1px;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
+.sp_hydrogen {
+	position: relative;
+	border: solid 1px transparent;
+	border-radius: 50%;
+	-webkit-animation: spHydro 5s infinite linear;
+	animation: spHydro 5s infinite linear;
+}
+.sp_hydrogen::before, .sp_hydrogen::after {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background-color: black;
+	border-radius: 50%;
+}
+.sp_hydrogen::before {
+	top: calc( 50% - 7.5px );
+	left: calc( 50% - 7.5px );
+}
+.sp_hydrogen::after {
+	top: 0;
+	left: 0;
+}
+@-webkit-keyframes spHydro {
+	from { -webkit-transform: rotate(0deg); }
+	to { -webkit-transform: rotate(359deg); }
+}
+@keyframes spHydro {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(359deg); }
+}
+
+
+
 .text_clock{
     width: 100%;
     height: 35px;
     border-top: solid 1px;
+    color: black;
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: "Noto Sans KR";
+
 }
 .marquee{
     overflow: hidden;
@@ -160,13 +212,17 @@ a{
     border: solid 1px;
     box-sizing: border-box;
     border-radius: 40px;
-    bottom: 41px;
+    bottom: 5vh;
     right: 249px;
     z-index: 10;
 }
+.top_button:hover{
+    background: salmon;
+    cursor: crosshair;
+
+}
 .top_button>img{
     padding: 21px 40px 21px 27px;
-    /* cursor: crosshair; */
 }
 
 /* header end */
