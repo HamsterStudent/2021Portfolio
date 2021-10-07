@@ -331,6 +331,8 @@ a{
 }
 /* home end */
 
+/* cards start */
+
 .card_info{
     position: relative;
     top: 0;
@@ -367,4 +369,72 @@ a{
     margin-top: 40px;
     color: #292929;
 }
+
+.card_introduce{
+    width: 720px;
+    height: 372px;
+    background: #4394AA;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.card_introduce::after{
+    content: "";
+    width: 685px;
+    height: 337px;
+    border: solid 1px;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+.card_title_img{
+    width: 237px;
+    height: 77px;
+    position: relative;
+    top: 36px;
+    left: 50%;
+    margin-left: -118.5px;
+
+}
+.introduce_text{
+    width: 621px;
+    height: 168px;
+    text-align: center;
+    font-family: "Noto Sans KR";
+    position: relative;
+    top: 65px;
+    left: 50%;
+    margin-left: -310.5px;
+}
+.egg_sticker{
+    width: 280px;
+    height: 210px;
+    background: url("/images/egg_sticker.png") no-repeat;
+    background-size: contain;
+}
+.logo_sticker{
+    position: relative;
+    width: 358px;
+    height: 150px;
+    background: #F4CE20;
+}
+.logo_sticker::after{
+    content: "";
+    width: 333px;
+    height: 124px;
+    border: solid 3px;
+    position: absolute;
+    top: 12px;
+    left: 11px;
+}
+.logo_sticker>img{
+    position: relative;
+    top: 50%;
+    margin-top: -53px;
+    left: 50%;
+    margin-left: -128.5px;
+}
+
+/* cards end */
+
 /* contents end */
