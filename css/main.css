@@ -409,7 +409,7 @@ a{
 .egg_sticker{
     width: 280px;
     height: 210px;
-    background: url("/images/egg_sticker.png") no-repeat;
+    background: url("./images/egg_sticker.png") no-repeat;
     background-size: contain;
 }
 .logo_sticker{
