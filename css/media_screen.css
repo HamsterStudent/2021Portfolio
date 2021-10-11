@@ -1,5 +1,16 @@
-@media (min-width: 1900px){
+@media (max-width: 1900px){
     .left_box, .right_box{
         display: none;
+    }
+    .top_button{
+        right: 249px;
+    }
+}
+@media (max-width: 1200px){
+    html{
+        font-size: 13px;
+    }
+    .contents_wrap{
+        width: 100%;
     }
 }

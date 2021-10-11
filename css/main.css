@@ -3,6 +3,10 @@
     font-family: "eng_bold"; 
 }
 @font-face{
+	src: url("../font/LiberationSerif-Regular.woff") format('woff');
+    font-family: "eng_regular"; 
+}
+@font-face{
 	src: url("../font/LiberationSerif-BoldItalic.woff") format('woff');
     font-family: "eng_italic"; 
 }
@@ -232,6 +236,7 @@ a{
     float: left;
     position: relative;
     width: 100%;
+    padding: 0 1rem;
 }
 /* home start */
 .scroll_section{
@@ -323,7 +328,7 @@ a{
     background: #00794B;
     position: absolute;
     bottom: 5vh;
-    right: 0;
+    right: 0px;
     height: 84vh;
     width: 69.1%;
     box-sizing: border-box;
@@ -406,6 +411,12 @@ a{
     left: 50%;
     margin-left: -310.5px;
 }
+.sausage_sticker{
+    width: 350px;
+    height: 136px;
+    background-size: contain;
+
+}
 .egg_sticker{
     width: 280px;
     height: 210px;
@@ -436,6 +447,58 @@ a{
     margin-left: -128.5px;
 }
 
+.card_breakfast{
+    position: relative; top: 0; left: 0;
+    width: 392px;
+    height: 500px;
+    background: #C98981;
+    border-radius: 30px;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    letter-spacing: 0;
+    padding: 0 2rem;
+    font-family: "eng_regular";
+}
+.card_breakfast::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+img.breakfast_symbol{
+    position: relative;
+    left: 50%;
+    margin-left: -73.5px;
+    margin-top: 36px;
+}
+.card_breakfast>h3{
+    font-size: 36px;
+    color: #F5F5F5;
+    margin: 20px 0;
+}
+.main_sub_title{
+    font-size: 36px;
+    text-align: center;
+    color: #F5F5F5;
+}
+.card_breakfast>h2{
+    font-size: 55px;
+    text-align: center;
+    margin-top: -30px;
+    color: #F5F5F5;
+}
+.breakfast_text{
+    color: #F5F5F5;
+    line-height: 16px;
+}
+.breakfast_text_small{
+    width: 153px;
+}
+.breakfast_img{
+    position: absolute;
+    right: 2rem;
+    top: 460px;
+
+
+}
 /* cards end */
 
 /* contents end */
