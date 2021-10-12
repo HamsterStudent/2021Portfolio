@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="./images/brick.png"> <!-- icon -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet"> <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"> <!-- font -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js "></script>
+
     <title>O.O.P Breakfast Club</title>
 </head>
 <body>
@@ -130,7 +132,9 @@
 
 
         <section class="scroll_section" id="scroll_section_1">
-            <div class="card_info">
+
+            <div class="card_info" id="drag_win01">
+                <div id="drag_bar"></div>
                 <h2>Orbit Of Pearl</h2>
                 <div class="info_num">No.</div>
                 <div class="info_text">
@@ -140,7 +144,9 @@
                     &nbsp;&nbsp;이와 같이, 저의 많은 작업과 시도들은 '나'라는 존재 주변에 편입하기 위해 깎여 나가기도 하고 다른 것들과 부딪혀 깨지고 사라지기도 하지만, 결국 안정적으로 궤도에 오르게 되는 것들은 '나'를 중심으로 원을 그리며 그 개개의 세상을 그려나갑니다. 여러 번의 '수정' 이라는 과정을 통해서. 이렇게 저와 작업물들은 끊임없이 변화하며 더 나은 모습을 꾀하고 있습니다.
                 </div>
             </div>
-            <div class="card_introduce">
+
+            <div class="card_introduce drag_win">
+                <div class="drag_bar"></div>
                 <div class="card_title_img">
                     <img src="./images/logo_large_1.png" alt="o.o.p breakfast club logo">
                 </div>
@@ -150,14 +156,18 @@
                     일러스트레이터로 디자인 작업을 하는 과정에서, 그 환경이 무척 테이블 위에서 종이를 자르고 붙이는 놀이를 하는 것과 닮아있다는 것에 착안하여 웹페이지를 레스토랑의 테이블로 여기고 주문서, 레시피 카드, 영수증 등의 컨셉으로 컨텐츠를 구성했으며 스크롤바를 시간의 흐름으로 상정하여 웹을 구현하였습니다.
                 </div>
             </div>
-            <div class="egg_sticker"></div>
-            <div class="logo_sticker">
+
+            <div class="egg_sticker drag_win">
+                <div class="drag_bar"></div>
+            </div>
+
+            <div class="logo_sticker drag_win">
                 <img src="./images/logo_large.png" alt="o.o.p breakfast club logo">
             </div>
-            <div class="sausage_sticker">
-                <img src="./images/sausage_sticker.png" alt="o.o.p breakfast club logo">
-            </div>
-            <div class="card_breakfast">
+
+            
+
+            <div class="card_breakfast drag_win">
                 <img class="breakfast_symbol" src="./images/sunrise.png" alt="breakfast card">
                 <h3 class="main_sub_title">GOOD MORNING</h3>
                 <h2>BREAKFAST</h2>
@@ -183,6 +193,15 @@
                     Roman soldiers woke up to a breakfast of pulmentus, porridge similar to the Italian polenta, made from roasted spelt wheat or barley that was then pounded and cooked in a cauldron of water.<br><br><br>
                 </p>
             </div>
+
+            <div class="sausage_sticker drag_win">
+                <img src="./images/sausage_sticker.png" alt="o.o.p breakfast club logo">
+            </div>
+            
+            <div class="card_black drag_win">
+
+            </div>
+
         </section>
         <section class="scroll_section" id="scroll_section_2"></section>
         <section class="scroll_section" id="scroll_section_3"></section>
