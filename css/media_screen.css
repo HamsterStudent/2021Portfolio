@@ -3,7 +3,7 @@
         display: none;
     }
     .top_button{
-        right: 249px;
+        right: 100px;
     }
 }
 @media (max-width: 1200px){
@@ -12,5 +12,8 @@
     }
     .contents_wrap{
         width: 100%;
+    }
+    .top_button{
+        right: 1em;
     }
 }
