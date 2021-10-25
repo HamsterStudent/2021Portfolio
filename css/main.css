@@ -584,6 +584,8 @@ img.breakfast_symbol{
     position: relative;
     top: 0;
     left: 0;
+    /* background: #292929; */
+    
 }
 .end_receipt{
     width: 350px;
@@ -595,6 +597,49 @@ img.breakfast_symbol{
     margin-top: -320.5px;
     margin-left: -175px;
 }
+.end_receipt>img{
+    position: relative;
+    left: 50%;
+    margin-left: -128.5px;
+    margin-top: 40px;
+}
+.end_receipt>p{
+    font: normal 12px "Noto Sans KR";
+    text-align: center;
+}
+.end_receipt_list{
+    width: 252px;
+    height: 280px;
+    margin: 30px auto;
+    border-bottom: dotted 1px;
+}
+.end_receipt_list>h1{
+    display: block;
+    font: 1.714rem 'eng_italic';
+    height: 54px;
+    width: 252px;
+    line-height: 54px;
+    text-align: center;
+    border-bottom: dotted 1px;
+    border-top: dotted 1px;
+}
+.end_receipt_list>li{
+    display: flex;
+    font: 1.429rem "Noto Sans KR";
+    align-items: center;
+    margin-top: 15px;
+}
+.receipt_content{
+    margin-left: 30px;
+}
+p.receipt_goodbye_text{
+    font: normal 1.2rem "Noto Sans KR";
+}
+
+.home_button{
+    
+}
+
 /* end_receipt end */
 
 
