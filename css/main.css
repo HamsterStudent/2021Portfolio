@@ -637,7 +637,19 @@ p.receipt_goodbye_text{
 }
 
 .home_button{
-    
+    width: 165px;
+    height: 50px;
+    border: solid 1px white;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    margin-left: -82.5px;
+    text-align: center;
+    font-family: "Noto Sans KR";
+    line-height: 45px;
+    font-size: 20px;
+    color: white;
 }
 
 /* end_receipt end */

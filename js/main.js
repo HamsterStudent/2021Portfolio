@@ -1,10 +1,8 @@
-window.addEventListener('load', ()=>{
+
+(() => {
     rollingEyes();
     showTime();
-    
-    // let dragWindow01 = new dragWindow("#drag_win01");
-})
-
+})();
 
 // 시계
 function showTime(){
@@ -70,44 +68,3 @@ window.addEventListener('mousemove', function(e){
 }
 
 
-
-//드래그효과(수정요망)		   
-
-//   class dragWindow {
-//     constructor(selectWindow) {
-//         this.popup = document.querySelector(selectWindow);
-//         this.dragbar = this.popup.children[0];
-//         this.section = document.querySelector('#scroll_section_0')
-
-//         let sectionHeight = this.section.offsetHeight
-
-//         let downX; 
-//         let downY;
-
-//         this.initEvent();
-
-//     }
-
-//     initEvent(){
-//         this.dragbar.addEventListener('mousedown', (e) => {
-//             this.downX=e.offsetX; // 마우스를 처음 누른 X좌표구함 (popup 요소를 기준) 
-//             this.downY=e.offsetY; // 마우스를 처음 누른 Y좌표구함 (popup 요소를 기준)
-//             document.addEventListener('mousemove', (e) => {
-//                 gsap.set(this.popup,{ left: e.pageX - this.downX, top: 1000 - e.pageY - this.downY})
-//             })
-            
-//         });
-
-//         // this.dragbar.addEventListener('mouseup', () => {
-//         //     document.removeEventListener('mousemove', (e) => {
-//         //         gsap.set(this.popup,{ left: e.pageX - this.downX, top: e.pageY - this.downY})
-//         //     })
-//         // });
-
-//     }
-
-    
-//   }
-
-
-// )
